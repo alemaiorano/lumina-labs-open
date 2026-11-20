@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Does the approval still apply? | Lumina Labs</title>
+  <link rel="alternate" hreflang="pt-BR" href="index.pt.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/theme.js" defer></script>
+  <script src="../assets/practice.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the exercise</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Language and appearance">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="pt-BR" href="index.pt.html">PT-BR</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">GOVERNING AGENT ACTIONS</p>
+      <h1 id="title">Does the approval still apply?</h1>
+      <p>Your team approved one recipient for an agent’s action. Change the recipient and check what happens to the approval.</p>
+    </section>
+    <section class="workbench" aria-label="Review an agent’s approval">
+      <div class="panel">
+        <h2>What the team approved</h2>
+        <p>A fictional team approved sending a project summary to the internal project group.</p>
+
+        <form id="practice-form" hidden>
+          <fieldset>
+            <legend>Choose a recipient. Does the approval still apply?</legend>
+            <label class="choice"><input type="radio" name="answer" value="a" required> The same internal group</label>
+            <label class="choice"><input type="radio" name="answer" value="b" required> An external partner</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Check my decision</button>
+        </form>
+        <noscript><p>Use the worksheet below to do the exercise without JavaScript.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Decision and evidence</h2>
+        <div class="result" role="status" aria-atomic="true">
+          <p id="result-prompt" hidden>Choose an option to see the explanation.</p>
+          <div data-answer="a" hidden><p><strong>The internal recipient matches the approval.</strong></p><p>The recipient in this case is the one the team approved. The record can proceed to the remaining checks.</p></div>
+          <div data-answer="b" hidden><p><strong>Pause and ask for new approval.</strong></p><p>The partner is outside the approved audience. Record the change and get approval for the new recipient before sending anything.</p></div>
+          <div id="evidence" hidden><dl class="study-summary"><div><dt>Action</dt><dd>Send a summary</dd></div><div><dt>Recorded approval</dt><dd>Internal group</dd></div></dl></div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">What this exercise can tell you</strong>
+          <p>This exercise checks the recipient only. Before taking a real action, the system also needs to check the content, permissions and current rules.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">Use what you learned</h2>
+      <p>Use the worksheet to record what was approved, what changed and what should happen next. The course develops that record across several agent actions.</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="../downloads/agent-approval-record.zip" download>Download the worksheet (ZIP)</a>
+        <a class="course-link" href="https://lumytics.com/courses/governed-agent-operations/">Explore the course</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

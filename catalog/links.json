@@ -1,0 +1,72 @@
+{
+  "core": {
+    "en": "https://lumytics.com/courses/offers/core/",
+    "pt": "https://lumytics.com/courses/offers/core/pt/",
+    "checkout": "https://pay.hotmart.com/?off=67fdsxcb"
+  },
+  "eval-complete": {
+    "en": "https://lumytics.com/courses/offers/eval-complete/",
+    "pt": "https://lumytics.com/courses/offers/eval-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=zlmpjbkt"
+  },
+  "coding-complete": {
+    "en": "https://lumytics.com/courses/offers/coding-complete/",
+    "pt": "https://lumytics.com/courses/offers/coding-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=lhebjuwa"
+  },
+  "security-complete": {
+    "en": "https://lumytics.com/courses/offers/security-complete/",
+    "pt": "https://lumytics.com/courses/offers/security-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=6c6sishb"
+  },
+  "dogfooding-complete": {
+    "en": "https://lumytics.com/courses/offers/dogfooding-complete/",
+    "pt": "https://lumytics.com/courses/offers/dogfooding-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=dde04o38"
+  },
+  "synthetic-complete": {
+    "en": "https://lumytics.com/courses/offers/synthetic-complete/",
+    "pt": "https://lumytics.com/courses/offers/synthetic-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=r6kkpeh1"
+  },
+  "data-complete": {
+    "en": "https://lumytics.com/courses/offers/data-complete/",
+    "pt": "https://lumytics.com/courses/offers/data-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=g278kkug"
+  },
+  "cost-complete": {
+    "en": "https://lumytics.com/courses/offers/cost-complete/",
+    "pt": "https://lumytics.com/courses/offers/cost-complete/pt/",
+    "checkout": "https://pay.hotmart.com/?off=nff1fqnh"
+  },
+  "full-harness": {
+    "en": "https://lumytics.com/courses/vitrine/#offer-full-harness",
+    "pt": "https://lumytics.com/courses/vitrine/pt/#offer-full-harness",
+    "checkout": "https://pay.hotmart.com/?off=47sschle"
+  },
+  "applied-health-statistics": {
+    "en": "https://lumytics.com/courses/applied-health-statistics/",
+    "pt": "https://lumytics.com/courses/applied-health-statistics/pt/",
+    "checkout": "https://pay.hotmart.com/?off=upe6rst6"
+  },
+  "ai-product-development-harness": {
+    "en": "https://lumytics.com/courses/ai-product-development-harness/",
+    "pt": "https://lumytics.com/courses/ai-product-development-harness/pt/",
+    "checkout": "https://pay.hotmart.com/?off=cyzdf12o"
+  },
+  "governed-agent-operations": {
+    "en": "https://lumytics.com/courses/governed-agent-operations/",
+    "pt": "https://lumytics.com/courses/governed-agent-operations/pt/",
+    "checkout": "https://pay.hotmart.com/?off=8bvx22b1"
+  },
+  "experience-quality-harness": {
+    "en": "https://lumytics.com/courses/experience-quality-harness/",
+    "pt": "https://lumytics.com/courses/experience-quality-harness/pt/",
+    "checkout": "https://pay.hotmart.com/?off=5rpgdin8"
+  },
+  "ai-coding-os": {
+    "en": "https://lumytics.com/en/resources/ai-coding-os/",
+    "pt": "https://lumytics.com/recursos/ai-coding-os/",
+    "checkout": "https://pay.hotmart.com/?off=kb5l89qw"
+  }
+}

@@ -1,0 +1,2 @@
+{"id":"refund-5d","claim":"Refunds are processed within 5 business days.","source":"Policy: refunds are processed within 5 business days after approval.","rubric":"groundedness","threshold":0.8}
+{"id":"refund-14d","claim":"Refunds are processed within 14 business days.","source":"Policy: refunds are processed within 5 business days after approval.","rubric":"groundedness","threshold":0.9}

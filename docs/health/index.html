@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Who is missing from these averages? | Lumina Labs</title>
+  <link rel="alternate" hreflang="pt-BR" href="index.pt.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/theme.js" defer></script>
+  <script src="../assets/practice.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the exercise</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Language and appearance">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="pt-BR" href="index.pt.html">PT-BR</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">Dark mode</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">STATISTICS FOR HEALTH RESEARCH</p>
+      <h1 id="title">Who is missing from these averages?</h1>
+      <p>Two groups have different day-30 averages. Decide what you would report before comparing them.</p>
+    </section>
+    <section class="workbench" aria-label="Review the day-30 averages">
+      <div class="panel">
+        <h2>The first report</h2>
+        <p>A fictional study started with 20 participants in each group. The first report shows only averages.</p>
+        <dl class="study-summary"><div><dt>Group A</dt><dd>12</dd></div><div><dt>Group B</dt><dd>10</dd></div></dl>
+        <form id="practice-form" hidden>
+          <fieldset>
+            <legend>What would you report first?</legend>
+            <label class="choice"><input type="radio" name="answer" value="a" required> Only the two averages</label>
+            <label class="choice"><input type="radio" name="answer" value="b" required> The averages and how many measurements are missing</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Check my decision</button>
+        </form>
+        <noscript><p>Use the worksheet below to do the exercise without JavaScript.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Decision and evidence</h2>
+        <div class="result" role="status" aria-atomic="true">
+          <p id="result-prompt" hidden>Choose an option to see the explanation.</p>
+          <div data-answer="a" hidden><p><strong>Start by reporting the missing measurements.</strong></p><p>The two averages use different proportions of participants. Reporting only the averages hides that difference.</p></div>
+          <div data-answer="b" hidden><p><strong>Report the numbers behind both averages.</strong></p><p>That lets the reader see which measurements contributed and where more are missing.</p></div>
+          <div id="evidence" hidden><dl class="study-summary"><div><dt>Group A</dt><dd>2/20 missing (10%)</dd></div><div><dt>Group B</dt><dd>8/20 missing (40%)</dd></div></dl></div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">What this exercise can tell you</strong>
+          <p>These data show how much is missing. To interpret the difference between the averages, investigate why measurements are missing.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">Use what you learned</h2>
+      <p>Use the worksheet to draft a report with the available and missing counts. The course takes you from the research question to an analysis you can explain.</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="../downloads/missing-measurements.zip" download>Download the worksheet (ZIP)</a>
+        <a class="course-link" href="https://lumytics.com/courses/applied-health-statistics/">Explore the course</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

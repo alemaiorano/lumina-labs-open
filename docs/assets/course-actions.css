@@ -1,0 +1,39 @@
+/* Canonical action roles for course entry, preview and companion-pack surfaces. */
+.lumina-action.lumina-action{
+  --lumina-action-amber:var(--amber,var(--accent-amber,#FF9500));
+  --lumina-action-coral:var(--coral,var(--accent-coral,#FF4820));
+  --lumina-action-text:var(--text,var(--text-primary,#eaeaf0));
+  --lumina-action-mid:var(--mid,var(--text-secondary,#aaaabd));
+  --lumina-action-border:var(--border,var(--border-subtle,rgba(255,255,255,.13)));
+  --lumina-action-border-accent:var(--border-a,rgba(255,149,0,.36));
+  box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;gap:.55rem;min-width:0;max-width:100%;min-height:48px;
+  padding:12px 18px;border:1px solid transparent;border-radius:10px;
+  font-family:var(--fm,var(--font-mono,'JetBrains Mono',monospace));font-size:13px;font-weight:700;
+  line-height:1.2;letter-spacing:.03em;text-align:center;text-decoration:none;white-space:normal;overflow-wrap:anywhere;cursor:pointer;
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease,
+    background-color .15s ease,color .15s ease,filter .15s ease;
+}
+.lumina-action.lumina-action--compact{min-height:36px;padding:8px 13px;border-radius:8px;font-size:12px;letter-spacing:.04em;white-space:nowrap}
+.lumina-action.lumina-action--primary{border-color:transparent;background:linear-gradient(135deg,var(--lumina-action-amber),var(--lumina-action-coral));color:#06060b}
+.lumina-action.lumina-action--primary:hover{transform:translateY(-2px);filter:brightness(1.06);box-shadow:0 8px 28px rgba(255,72,32,.42)}
+.lumina-action.lumina-action--primary:active{transform:translateY(0);filter:brightness(.96);box-shadow:0 3px 12px rgba(255,72,32,.3)}
+.lumina-action.lumina-action--compact.lumina-action--primary:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(255,72,32,.35)}
+.lumina-action.lumina-action--secondary{border-color:var(--lumina-action-border);background:rgba(255,255,255,.025);color:var(--lumina-action-text)}
+.lumina-action.lumina-action--secondary:hover{transform:translateY(-2px);border-color:var(--lumina-action-border-accent);background:rgba(255,149,0,.07);color:var(--lumina-action-text);box-shadow:0 8px 24px -18px rgba(255,149,0,.8)}
+.lumina-action.lumina-action--secondary:active{transform:translateY(0);border-color:var(--lumina-action-border-accent);background:rgba(255,149,0,.12);box-shadow:none}
+.lumina-action.lumina-action--tertiary{min-height:36px;padding:5px 0;border:0;border-bottom:1px solid var(--lumina-action-border-accent);border-radius:0;background:transparent;color:var(--lumina-action-mid)}
+.lumina-action.lumina-action--tertiary:hover{color:var(--lumina-action-text);border-bottom-color:var(--lumina-action-amber)}
+.lumina-action.lumina-action--tertiary:active{background:rgba(255,149,0,.07);color:var(--lumina-action-amber);border-bottom-color:var(--lumina-action-amber)}
+.lumina-action.lumina-action:focus-visible{outline:2px solid var(--lumina-action-amber);outline-offset:3px}
+.lumina-action.lumina-action:is([disabled],[aria-disabled="true"]){pointer-events:none;cursor:not-allowed;opacity:.72;border-color:var(--lumina-action-border);background:rgba(255,255,255,.035);color:var(--lumina-action-mid);filter:saturate(.35);box-shadow:none;transform:none}
+@media(max-width:390px){.lumina-action.lumina-action{font-size:12px;letter-spacing:.02em}.lumina-action.lumina-action:not(.lumina-action--compact){width:100%}.lumina-action.lumina-action--compact{padding-inline:10px;font-size:11px;letter-spacing:0;white-space:normal}}
+@media(prefers-reduced-motion:reduce){
+  .lumina-action.lumina-action{transition:none}
+  .lumina-action.lumina-action.lumina-action:hover{transform:none}
+  .lumina-action.lumina-action--primary:hover{filter:brightness(1.06);box-shadow:0 6px 20px rgba(255,72,32,.38)}
+  .lumina-action.lumina-action--secondary:hover{border-color:var(--lumina-action-border-accent);background:rgba(255,149,0,.07);box-shadow:none}
+  .lumina-action.lumina-action:active{transform:none}
+  .lumina-action.lumina-action--primary:active{filter:brightness(.96);box-shadow:0 3px 12px rgba(255,72,32,.3)}
+  .lumina-action.lumina-action--secondary:active{background:rgba(255,149,0,.12);box-shadow:none}
+  .lumina-action.lumina-action--tertiary:active{background:rgba(255,149,0,.07);color:var(--lumina-action-amber)}
+}

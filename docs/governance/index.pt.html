@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>A autorização ainda vale? | Lumina Labs</title>
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/theme.js" defer></script>
+  <script src="../assets/practice.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o exercício</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../pt/demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Idioma e aparência">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="en" href="index.html">EN</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">Tema escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">GOVERNANDO AÇÕES DE AGENTES</p>
+      <h1 id="title">A autorização ainda vale?</h1>
+      <p>A equipe autorizou um destinatário para a ação de um agente. Troque o destinatário e veja o que acontece com a autorização.</p>
+    </section>
+    <section class="workbench" aria-label="Confira a autorização de um agente">
+      <div class="panel">
+        <h2>O que a equipe autorizou</h2>
+        <p>Uma equipe fictícia autorizou o envio de um resumo do projeto para o grupo interno.</p>
+
+        <form id="practice-form" hidden>
+          <fieldset>
+            <legend>Escolha um destinatário. A autorização ainda vale?</legend>
+            <label class="choice"><input type="radio" name="answer" value="a" required> O mesmo grupo interno</label>
+            <label class="choice"><input type="radio" name="answer" value="b" required> Um parceiro externo</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Conferir minha decisão</button>
+        </form>
+        <noscript><p>Use o material abaixo para fazer o exercício sem JavaScript.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Decisão e evidência</h2>
+        <div class="result" role="status" aria-atomic="true">
+          <p id="result-prompt" hidden>Escolha uma opção para ver a explicação.</p>
+          <div data-answer="a" hidden><p><strong>O destinatário interno corresponde à autorização.</strong></p><p>O destinatário deste caso é o que a equipe aprovou. O registro pode seguir para as demais checagens.</p></div>
+          <div data-answer="b" hidden><p><strong>Suspenda e peça nova autorização.</strong></p><p>O parceiro está fora do público aprovado. Registre a mudança e peça autorização para o novo destinatário antes de enviar.</p></div>
+          <div id="evidence" hidden><dl class="study-summary"><div><dt>Ação</dt><dd>Enviar um resumo</dd></div><div><dt>Autorização registrada</dt><dd>Grupo interno</dd></div></dl></div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">O que este exercício permite concluir</strong>
+          <p>O exercício verifica só o destinatário. Para uma ação real, também é preciso conferir o conteúdo, as permissões e as regras vigentes.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">Use o que você aprendeu</h2>
+      <p>Use o material para registrar o que foi autorizado, o que mudou e o que deve acontecer em seguida. O curso desenvolve esse registro para diferentes ações de agentes.</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="../downloads/agent-approval-record.zip" download>Baixar o exercício (ZIP)</a>
+        <a class="course-link" href="https://lumytics.com/courses/governed-agent-operations/pt/">Conhecer o curso</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

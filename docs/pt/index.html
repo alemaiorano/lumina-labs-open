@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Você liberaria esta resposta? | Lumina Labs</title>
+  <link rel="alternate" hreflang="en" href="../index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/scenarios.js" defer></script>
+  <script src="../assets/demo.js" defer></script>
+  <script src="../assets/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o lab</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Idioma e aparência">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="en" href="../index.html">EN</a>
+        <button type="button" class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" aria-pressed="false" hidden>Tema escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">AVALIAÇÕES DE LLM</p>
+      <h1 id="title">Você liberaria esta resposta?</h1>
+      <p>Compare uma resposta sobre reembolso com a política. Mude o prazo e veja quando a checagem bloqueia a liberação.</p>
+    </section>
+    <section class="workbench" aria-label="Teste da resposta sobre reembolso">
+      <div class="panel">
+        <h2>Política de reembolso</h2>
+        <blockquote>Os reembolsos são processados em até 5 dias úteis após a aprovação.</blockquote>
+        <form id="gate-form" hidden>
+          <fieldset>
+            <legend>Que prazo a resposta afirma?</legend>
+            <label class="choice"><input type="radio" name="days" value="14" checked> 14 dias úteis</label>
+            <label class="choice"><input type="radio" name="days" value="5"> 5 dias úteis</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Testar a resposta</button>
+        </form>
+        <noscript><p>Ative o JavaScript para usar a demo ou rode o lab offline abaixo.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Decisão de liberação</h2>
+        <div id="result" class="result" role="status" aria-atomic="true">
+          <p id="prompt" hidden>Escolha um prazo e teste a resposta para ver a decisão.</p>
+          <div id="verdict" hidden>
+            <div class="result-line"><strong id="decision" class="status"></strong><span id="score" class="score"></span></div>
+            <p id="evidence"></p>
+          </div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">O que a checagem pode deixar passar</strong>
+          <p>A política é fictícia. O avaliador procura palavras da resposta na política. Pode deixar passar negações ou condições omitidas.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="local-title">
+      <h2 id="local-title">Rode na sua máquina</h2>
+      <p>Na raiz do repositório, rode os dois casos completos. Basta a biblioteca padrão do Python. O lab funciona sem chave de API.</p>
+      <pre><code>python3 labs/assertion-gate/assertion_gate.py --lang pt</code></pre>
+      <p>Aprenda a escrever um teste que exija a condição “após a aprovação”.</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="https://lumytics.com/courses/offers/eval-complete/pt/">Conhecer o curso de avaliação de LLMs</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Lumina Labs · Uma amostra prática da coleção Full Harness</div></footer>
+</body>
+</html>

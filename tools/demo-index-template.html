@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>$title | Lumina Labs</title>
+  <link rel="alternate" hreflang="$other_lang" href="$alternate">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="${base}assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="${base}assets/course-actions.css">
+  <link rel="stylesheet" href="${base}assets/demo.css">
+  <script src="${base}assets/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">$skip</a>
+  <header>
+    <div class="wrap topbar">
+      <span class="brand">Lumina Labs</span>
+      <nav class="controls" aria-label="$controls">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="$other_lang" href="$alternate">$other_label</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">$dark_mode</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <h1 id="title">$title</h1>
+      <p>$lead</p>
+    </section>
+    <div class="exercise-list">
+      <article class="exercise-card">
+        <h2>$eval_title</h2>
+        <p>$eval_copy</p>
+        <a class="course-link" href="index.html">$eval_link</a>
+      </article>
+      <article class="exercise-card">
+        <h2>$health_title</h2>
+        <p>$health_copy</p>
+        <a class="course-link" href="${base}health/index${suffix}.html">$health_link</a>
+      </article>
+      <article class="exercise-card">
+        <h2>$gov_title</h2>
+        <p>$gov_copy</p>
+        <a class="course-link" href="${base}governance/index${suffix}.html">$gov_link</a>
+      </article>
+    </div>
+  </main>
+</body>
+</html>

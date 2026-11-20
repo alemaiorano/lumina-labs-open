@@ -1,0 +1,13 @@
+/* Canonical Lumina tokens for standalone course surfaces: landing + logo export kit. */
+:root{
+  --bg:#06060b;--bg-2:#0c0c18;--bg-3:#141428;
+  --panel:#0c0c18;--panel2:#141428;--card:rgba(18,18,40,.65);
+  --text:#eaeaf0;--dim:#8a8aa0;--mid:#aaaabd;
+  --gold:#FFD166;--amber:#FF9500;--coral:#FF4820;--green:#5fc979;
+  --border:rgba(255,255,255,.12);--line:var(--border);--border-a:rgba(255,149,0,.36);
+  --r:16px;--fh:'IBM Plex Serif',serif;--fb:'DM Sans',sans-serif;--fm:'JetBrains Mono',monospace;
+  --serif:var(--fh);--sans:var(--fb);--mono:var(--fm);
+}
+.standalone-course{background:var(--bg);color:var(--text);font-family:var(--fb);line-height:1.65}
+.standalone-course ::selection{background:rgba(255,149,0,.25)}
+.standalone-course a:focus-visible,.standalone-course button:focus-visible{outline:2px solid var(--coral);outline-offset:3px;border-radius:4px}

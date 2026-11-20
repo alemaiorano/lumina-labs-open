@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Would you ship this answer? | Lumina Labs</title>
+  <link rel="alternate" hreflang="pt-BR" href="pt/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="assets/course-actions.css">
+  <link rel="stylesheet" href="assets/demo.css">
+  <script src="assets/scenarios.js" defer></script>
+  <script src="assets/demo.js" defer></script>
+  <script src="assets/theme.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the lab</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Language and appearance">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="pt-BR" href="pt/index.html">PT-BR</a>
+        <button type="button" class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" aria-pressed="false" hidden>Dark mode</button>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">LLM EVALUATIONS</p>
+      <h1 id="title">Would you ship this answer?</h1>
+      <p>Test a refund answer against a policy. Change the deadline and see what makes the release gate hold.</p>
+    </section>
+    <section class="workbench" aria-label="Refund answer experiment">
+      <div class="panel">
+        <h2>Refund policy</h2>
+        <blockquote>Refunds are processed within 5 business days after approval.</blockquote>
+        <form id="gate-form" hidden>
+          <fieldset>
+            <legend>Which deadline does the answer claim?</legend>
+            <label class="choice"><input type="radio" name="days" value="14" checked> 14 business days</label>
+            <label class="choice"><input type="radio" name="days" value="5"> 5 business days</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Run the gate</button>
+        </form>
+        <noscript><p>Enable JavaScript for the demo, or run the offline lab below.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Release decision</h2>
+        <div id="result" class="result" role="status" aria-atomic="true">
+          <p id="prompt" hidden>Choose a deadline and test the answer to see the result.</p>
+          <div id="verdict" hidden>
+            <div class="result-line"><strong id="decision" class="status"></strong><span id="score" class="score"></span></div>
+            <p id="evidence"></p>
+          </div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">What this check can miss</strong>
+          <p>This example uses a fictional policy. The evaluator checks for matching words. It can miss negations and omitted conditions.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="local-title">
+      <h2 id="local-title">Run it on your machine</h2>
+      <p>From the repository root, run the full two-case suite. It uses Python’s standard library and needs no API key.</p>
+      <pre><code>python3 labs/assertion-gate/assertion_gate.py</code></pre>
+      <p>Learn to write a test that requires the condition “after approval.”</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="https://lumytics.com/courses/offers/eval-complete/">Explore the LLM evaluation course</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Lumina Labs · A hands-on sample from Full Harness</div></footer>
+</body>
+</html>

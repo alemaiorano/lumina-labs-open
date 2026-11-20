@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Quem ficou de fora dessas médias? | Lumina Labs</title>
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/theme.js" defer></script>
+  <script src="../assets/practice.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o exercício</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="../pt/demos.html">Lumina Labs</a>
+      <nav class="controls" aria-label="Idioma e aparência">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="en" href="index.html">EN</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">Tema escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">ESTATÍSTICA PARA PESQUISA EM SAÚDE</p>
+      <h1 id="title">Quem ficou de fora dessas médias?</h1>
+      <p>Dois grupos têm médias diferentes no dia 30. Decida o que você relataria antes de compará-las.</p>
+    </section>
+    <section class="workbench" aria-label="Revise as médias do dia 30">
+      <div class="panel">
+        <h2>O primeiro relatório</h2>
+        <p>Um estudo fictício começou com 20 participantes em cada grupo. O primeiro relatório mostra só as médias.</p>
+        <dl class="study-summary"><div><dt>Grupo A</dt><dd>12</dd></div><div><dt>Grupo B</dt><dd>10</dd></div></dl>
+        <form id="practice-form" hidden>
+          <fieldset>
+            <legend>O que você relataria primeiro?</legend>
+            <label class="choice"><input type="radio" name="answer" value="a" required> Só as duas médias</label>
+            <label class="choice"><input type="radio" name="answer" value="b" required> As médias e quantas medidas faltam</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">Conferir minha decisão</button>
+        </form>
+        <noscript><p>Use o material abaixo para fazer o exercício sem JavaScript.</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>Decisão e evidência</h2>
+        <div class="result" role="status" aria-atomic="true">
+          <p id="result-prompt" hidden>Escolha uma opção para ver a explicação.</p>
+          <div data-answer="a" hidden><p><strong>Comece por relatar as medidas ausentes.</strong></p><p>As duas médias foram calculadas com proporções diferentes de participantes. Mostrar só as médias esconde essa diferença.</p></div>
+          <div data-answer="b" hidden><p><strong>Mostre os números por trás das duas médias.</strong></p><p>Assim, o leitor vê quantas medidas entraram no cálculo e em qual grupo faltam mais.</p></div>
+          <div id="evidence" hidden><dl class="study-summary"><div><dt>Grupo A</dt><dd>2/20 ausentes (10%)</dd></div><div><dt>Grupo B</dt><dd>8/20 ausentes (40%)</dd></div></dl></div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">O que este exercício permite concluir</strong>
+          <p>Os dados mostram quantas medidas faltam. Antes de interpretar a diferença entre as médias, investigue por que as medidas estão ausentes.</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">Use o que você aprendeu</h2>
+      <p>Use o material para escrever um relato com as contagens disponíveis e ausentes. No curso, você parte da pergunta de pesquisa e chega a uma análise que consegue explicar.</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="../downloads/missing-measurements.zip" download>Baixar o exercício (ZIP)</a>
+        <a class="course-link" href="https://lumytics.com/courses/applied-health-statistics/pt/">Conhecer o curso</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

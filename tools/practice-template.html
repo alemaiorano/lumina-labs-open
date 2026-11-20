@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="$lang">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>$title | Lumina Labs</title>
+  <link rel="alternate" hreflang="$other_lang" href="$other_file">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Serif:wght@600;700&amp;family=JetBrains+Mono:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="../assets/standalone-course-tokens.css">
+  <link rel="stylesheet" href="../assets/course-actions.css">
+  <link rel="stylesheet" href="../assets/demo.css">
+  <script src="../assets/theme.js" defer></script>
+  <script src="../assets/practice.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">$skip</a>
+  <header>
+    <div class="wrap topbar">
+      <a class="brand" href="$demo_index">Lumina Labs</a>
+      <nav class="controls" aria-label="$controls">
+        <a class="lumina-action lumina-action--compact lumina-action--secondary" lang="$other_lang" href="$other_file">$other_label</a>
+        <button class="lumina-action lumina-action--compact lumina-action--secondary" id="theme" type="button" hidden aria-pressed="false">$dark_mode</button>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main">
+    <section class="hero" aria-labelledby="title">
+      <p class="label">$category</p>
+      <h1 id="title">$title</h1>
+      <p>$lead</p>
+    </section>
+    <section class="workbench" aria-label="$exercise">
+      <div class="panel">
+        <h2>$setup_title</h2>
+        <p>$setup</p>
+$example_data
+        <form id="practice-form" hidden>
+          <fieldset>
+            <legend>$question</legend>
+            <label class="choice"><input type="radio" name="answer" value="a" required> $choice_a</label>
+            <label class="choice"><input type="radio" name="answer" value="b" required> $choice_b</label>
+          </fieldset>
+          <button class="lumina-action lumina-action--primary" type="submit">$submit</button>
+        </form>
+        <noscript><p>$noscript</p></noscript>
+      </div>
+      <div class="panel">
+        <h2>$result_title</h2>
+        <div class="result" role="status" aria-atomic="true">
+          <p id="result-prompt" hidden>$result_prompt</p>
+          <div data-answer="a" hidden><p><strong>$result_a</strong></p><p>$reason_a</p></div>
+          <div data-answer="b" hidden><p><strong>$result_b</strong></p><p>$reason_b</p></div>
+          <div id="evidence" hidden>$evidence</div>
+        </div>
+        <aside class="callout note" aria-labelledby="limit-label">
+          <strong class="k" id="limit-label">$limit_label</strong>
+          <p>$limit</p>
+        </aside>
+      </div>
+    </section>
+    <section class="next" aria-labelledby="next-title">
+      <h2 id="next-title">$next_title</h2>
+      <p>$next_copy</p>
+      <div class="actions">
+        <a class="lumina-action lumina-action--secondary" href="$worksheet_url" download>$worksheet_label</a>
+        <a class="course-link" href="$course_url">$course_label</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
